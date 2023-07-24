@@ -12,6 +12,9 @@ class C {
   }
 }
 
+// 通过Container容器，将 B 和 A C 进行解耦
+// A C类如果更改了，只需修改容器Container代码即可，不会影响到使用到他的 B 类
+// 这样代码只需修改一处即可。
 class Container {
   mo: any
   constructor() {
